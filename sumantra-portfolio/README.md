@@ -1,6 +1,19 @@
-# Sumantra Kundu — Personal Portfolio
+# Sumantra Kundu — Portfolio
 
-A premium dark portfolio built with Next.js, React, TypeScript and Tailwind CSS v4, with a custom responsive visual system and lime accents.
+A Next.js portfolio for Sumantra Kundu, built with a premium dark-and-lime visual direction, responsive layouts and motion effects.
+
+## Personal details included
+- Email: sumantrakundu@gmail.com
+- WhatsApp: +91 9836042181
+- Microsoft Teams ID: sumantra.kundu
+- LinkedIn: https://www.linkedin.com/in/sumantra1981/
+
+## CV-led profile
+- Lead Web Designer | Lead UX/UI Designer
+- 18+ years of digital design and frontend development experience
+- UX/UI specialisation: 6 years
+- L&G Consultancy: October 2019–Present
+- Web Spiders: May 2008–October 2019
 
 ## Run locally
 
@@ -11,23 +24,17 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Featured work and independent AI demos
+## Production build
 
-- **ShipVision** — live AI-powered courier and shipping demo: https://shipvision.netlify.app/
-- **DocTrust** — live AI-assisted document verification demo: https://doctrust26.netlify.app/
-- **AI Personal Loan** — currently runs locally; demo available on request. The portfolio describes the intended workflow as a concept, not as a live lending or approval service.
-- **Rotterdam Dockers** — live club website and custom CMS: https://rotterdamdockers.cricket/
-
-The three AI applications are presented as independent demo projects based on personal ideas. The content explains their current capabilities and intended workflows without claiming production-grade accuracy, guaranteed document authenticity, or guaranteed loan approval.
-
-## Before publishing — personal details to update
-
-1. In `app/page.tsx`, replace `YOUR_EMAIL@example.com` with your professional email address.
-2. Replace the generic LinkedIn URL with your actual profile URL.
-3. Confirm the GitHub URL and project links.
-4. Add verified project screenshots, measurable outcomes and any additional public demo links.
-5. Confirm the experience summary and current availability wording.
+```bash
+npm run build
+npm run start
+```
 
 ## Deploy
+Import this repository into Vercel. The framework should be detected as Next.js automatically.
 
-Import this project into Vercel, use the default Next.js build settings, and deploy. Connect a custom domain after deployment. For Google Sites, deploy the app first and then embed the deployed URL using **Insert → Embed → By URL** or **Full page embed**.
+## Notes
+- Upload the project files and folders to GitHub; do not upload `node_modules`, `.next`, or local `.env` files.
+- The AI personal-loan concept is marked as a local demo and is not presented as a live public product.
+- Portfolio copy is based on the latest CV supplied and project details provided in the conversation.

@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Sumantra Kundu — Design Engineer & AI Product Developer',
-  description: '17 years of experience across UI/UX design, frontend engineering and AI-powered product development. Available for international freelance and remote contracts.',
+  title: 'Sumantra Kundu — Lead Web Designer & Lead UX/UI Designer',
+  description: '18+ years of experience across web design, UX/UI, frontend development and AI-assisted digital workflows. Based in Kolkata, India; available for international freelance and remote contracts.',
   openGraph: {
-    title: 'Sumantra Kundu — Design Engineer & AI Product Developer',
-    description: 'Designing thoughtful digital experiences. Engineering products that move businesses forward.',
+    title: 'Sumantra Kundu — Lead Web Designer & Lead UX/UI Designer',
+    description: 'Lead Web Designer and Lead UX/UI Designer with 18+ years of experience in digital design and frontend development.',
     type: 'website'
   }
 };
