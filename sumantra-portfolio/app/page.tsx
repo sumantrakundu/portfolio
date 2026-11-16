@@ -10,20 +10,34 @@ const projects = [
   },
   {
     number: '02', name: 'Rotterdam Dockers', type: 'SPORTS · CUSTOM CMS · WEB',
-    description: 'A complete cricket club website and custom CMS, designed and developed end to end — from visual direction to a practical content workflow.',
-    tags: ['UI design', 'Custom CMS', 'Frontend', 'Responsive web'],
+    description: 'Lead UX/UI design and AI-assisted web design and development for the official Rotterdam Dockers website, a team in the European T20 Premier League (ETPL). The platform brings together team and player profiles, fixtures, news, tickets, merchandise and fan engagement.',
+    tags: ['Lead UX/UI', 'AI-assisted design', 'Custom CMS', 'Frontend development'],
     className: 'dockers', label: 'PORT OF CHAMPIONS', href: 'https://rotterdamdockers.cricket/',
-    note: 'Live website'
+    note: 'Lead UX/UI Designer · Live website'
   },
   {
-    number: '03', name: 'AI Personal Loan', type: 'FINTECH · AI · APPLICATION WORKFLOW',
+    number: '03', name: 'KGC — Knowledge Group, Dubai', type: 'EDTECH · UX/UI · WEB DEVELOPMENT',
+    description: 'Designed and developed a comprehensive online education platform for professional training, certifications, digital learning and corporate solutions, with a focus on modern UX, course management, engagement and conversion.',
+    tags: ['UX/UI design', 'Education platform', 'Course journeys', 'Frontend development'],
+    className: 'kgc', label: 'LEARNING, CONNECTED', href: 'https://www.kgc.com/en',
+    note: 'UX/UI Designer · Online education ecosystem'
+  },
+  {
+    number: '04', name: 'DirectAxis Financial Services', type: 'FINANCIAL SERVICES · UX/UI · FRONTEND',
+    description: 'Created the user journey from the initial design stage in Adobe XD and Photoshop through to frontend development, using AI-assisted support in the design-to-build workflow.',
+    tags: ['UX/UI design', 'Adobe XD', 'Photoshop', 'User journey', 'Frontend development'],
+    className: 'directaxis', label: 'DESIGN TO DIGITAL JOURNEY', href: 'https://www.linkedin.com/in/sumantra1981/details/projects/edit/forms/1384772107/',
+    note: 'Oct 2019 – Jun 2021 · UX/UI Designer'
+  },
+  {
+    number: '05', name: 'AI Personal Loan', type: 'FINTECH · AI · APPLICATION WORKFLOW',
     description: 'A personal loan application concept using AI-assisted checks for applicant details and supporting documents, with human review for flagged cases.',
     tags: ['Python', 'FinTech UX', 'Document checks', 'Admin review'],
     className: 'loan', label: 'A CLEARER WAY TO APPLY', href: '',
     note: 'Local development demo · Not publicly hosted'
   },
   {
-    number: '04', name: 'DocTrust', type: 'AI · DOCUMENT VERIFICATION',
+    number: '06', name: 'DocTrust', type: 'AI · DOCUMENT VERIFICATION',
     description: 'An AI-assisted document review demo combining image metadata analysis, OCR text checks and additional validation signals to flag possible inconsistencies.',
     tags: ['Python', 'OCR', 'Metadata analysis', 'Document validation'],
     className: 'verify', label: 'TRUST, BUILT INTO THE FLOW', href: 'https://doctrust26.netlify.app/',
@@ -74,13 +88,15 @@ export default function Home() {
       <section className="proof-strip"><div className="wrap proof-inner"><div><strong>18<span>+</span></strong><small>YEARS EXPERIENCE</small></div><div><strong>02</strong><small>DISCIPLINES, ONE MINDSET</small></div><div><strong>03</strong><small>INDEPENDENT AI DEMOS</small></div><div><strong>∞</strong><small>CURIOSITY TO KEEP BUILDING</small></div></div></section>
 
       <section className="section wrap" id="work">
-        <div className="section-head"><div><div className="eyebrow">01 / SELECTED WORK</div><h2>Ideas made <span className="serif-italic">real.</span></h2></div><p>A selection of live work and independent product concepts across digital experiences, logistics and fintech.</p></div>
+        <div className="section-head"><div><div className="eyebrow">01 / SELECTED WORK</div><h2>Ideas made <span className="serif-italic">real.</span></h2></div><p>Selected client work and independent product concepts across sport, education, financial services, logistics and fintech.</p></div>
         <div className="project-grid">
           {projects.map((p) => <article className={`project-card ${p.className}`} key={p.number}>
             <div className="project-visual">
               <div className="visual-top"><span>{p.number} / CASE STUDY</span><span>{p.type}</span></div>
               {p.className === 'ship' && <div className="mock-window ship-window"><div className="mock-nav"><b>ship<span>vision</span></b><span>TRACK&nbsp;&nbsp; SERVICES&nbsp;&nbsp; SIGN IN</span></div><div className="ship-layout"><div><small>MOVE SMARTER</small><h3>Every shipment.<br/><em>In sight.</em></h3><p>One clear view from pickup to delivery.</p><span className="mock-pill">Get a shipping estimate ↗</span></div><div className="ship-graphic"><div className="route route-one"/><div className="route route-two"/><div className="parcel">▧</div><span className="pin pin-one">●</span><span className="pin pin-two">●</span><span className="map-label label-one">PICKUP</span><span className="map-label label-two">DELIVERY</span></div></div></div>}
               {p.className === 'dockers' && <div className="dockers-window"><div className="dockers-title">ROTTERDAM<br/><span>DOCKERS</span></div><div className="dockers-sub">PORT OF CHAMPIONS</div><div className="dockers-ball">✳</div><div className="dockers-bottom">CRICKET CLUB · ROTTERDAM</div></div>}
+              {p.className === 'kgc' && <div className="kgc-window"><div className="kgc-top"><b>knowledge<span>group</span></b><span>LEARN&nbsp;&nbsp; TRAINING&nbsp;&nbsp; CORPORATE</span></div><div className="kgc-content"><small>LEARNING THAT MOVES YOU FORWARD</small><h3>Knowledge<br/><i>for what’s next.</i></h3><p>Professional learning. Real-world impact.</p><div className="kgc-course-row"><span>01&nbsp; PROFESSIONAL CERTIFICATIONS</span><span>02&nbsp; DIGITAL LEARNING</span><span>03&nbsp; CORPORATE SOLUTIONS</span></div></div><div className="kgc-orb"/></div>}
+              {p.className === 'directaxis' && <div className="directaxis-window"><div className="da-top"><b>direct<span>axis</span></b><span>PERSONAL FINANCE&nbsp;&nbsp; SUPPORT</span></div><div className="da-content"><small>A JOURNEY BUILT AROUND YOU</small><h3>Move forward<br/><i>with confidence.</i></h3><div className="da-steps"><span>01&nbsp; YOUR DETAILS</span><span>02&nbsp; YOUR NEEDS</span><span>03&nbsp; NEXT STEPS</span></div><div className="da-cta">Explore your options&nbsp; ↗</div></div><div className="da-ring"/></div>}
               {p.className === 'loan' && <div className="loan-window"><div className="loan-brand">flow<span>.</span>finance</div><div className="loan-copy"><small>YOUR NEXT CHAPTER STARTS HERE</small><h3>A loan journey<br/>that moves <i>with you.</i></h3><div className="loan-progress"><span/><span/><span/><span/><span/></div><div className="loan-button">Start your application&nbsp; ↗</div></div><div className="loan-side"><span>01 / IDENTITY</span><b>✓</b><span>02 / INCOME</span><b>···</b><span>03 / REVIEW</span></div></div>}
               {p.className === 'verify' && <div className="verify-window"><div className="verify-head"><span>DOCTRUST / WORKSPACE</span><span>● SECURE FLOW</span></div><div className="verify-title">A clearer view<br/>of every <i>document.</i></div><div className="doc-stack"><div className="doc doc-back"><span>INCOME STATEMENT</span><b>▤</b></div><div className="doc doc-mid"><span>PROOF OF ADDRESS</span><b>▤</b></div><div className="doc doc-front"><span>IDENTITY DOCUMENT</span><b>✓</b><small>READY FOR REVIEW</small></div></div></div>}
               <div className="visual-caption">{p.label}</div>
@@ -88,7 +104,7 @@ export default function Home() {
             <div className="project-info"><div><span className="project-note">{p.note}</span><h3>{p.name}</h3><p>{p.description}</p><div className="tag-row">{p.tags.map(t=><span key={t}>{t}</span>)}</div></div>{p.href ? <a className="project-link" href={p.href} target="_blank" rel="noreferrer" aria-label={`Visit ${p.name}`}><ArrowUpRight size={21}/></a> : <span className="project-request">DEMO ON REQUEST</span>}</div>
           </article>)}
         </div>
-        <div className="client-work-strip"><span>OTHER CLIENT & PRODUCT EXPERIENCE</span><div><b>Wysely</b><b>KGC</b><b>Kudough</b><b>Directaxis</b><b>Mitsubishi Europe</b><b>TMW Spiders</b><b>TMW Portal</b><b>IIMC</b><b>TravelApp</b><b>Sanlam</b></div></div><div className="work-foot"><span>MORE WORK & DETAILS AVAILABLE ON REQUEST</span><a href="#contact">Discuss a project <ArrowUpRight size={15}/></a></div>
+        <div className="client-work-strip"><span>OTHER CLIENT & PRODUCT EXPERIENCE</span><div><b>Wysely</b><b>Kudough</b><b>Mitsubishi Europe</b><b>TMW Spiders</b><b>TMW Portal</b><b>IIMC</b><b>TravelApp</b><b>Sanlam</b></div></div><div className="work-foot"><span>MORE WORK & DETAILS AVAILABLE ON REQUEST</span><a href="#contact">Discuss a project <ArrowUpRight size={15}/></a></div>
       </section>
 
       <section className="ai-lab-section" id="ai-lab">
